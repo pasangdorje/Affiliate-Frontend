@@ -1,0 +1,41 @@
+{
+   "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "node": true
+   },
+   "extends": ["eslint-config-leapfrog/react"],
+   "parser": "babel-eslint",
+   "parserOptions": {
+      "ecmaFeatures": {
+         "jsx": true
+      },
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+   },
+   "plugins": ["react"],
+   "rules": {
+      "no-console": "off",
+      "camelcase": [
+         2,
+         {
+            "properties": "never"
+         }
+      ]
+   },
+
+   "settings": {
+      "react": {
+         "createClass": "createReactClass",
+         "pragma": "React",
+         "version": "detect",
+         "flowVersion": "0.53"
+      },
+      "jsdoc": {
+         "additionalTagNames": {
+            "customTags": ["api"]
+         }
+      }
+   }
+}
